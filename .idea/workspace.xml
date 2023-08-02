@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="09b04e58-d19b-40be-a0e4-be143cba4248" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../GitHub-Users/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GitHub-Users/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GitHub-Users/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GitHub-Users/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my-app/.idea/my-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.husky/pre-commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/react-aviasales.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AviaSalesApp/AviaSalesApp.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AviaSalesApp/AviaSalesApp.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AviaSalesApp/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TicketFilter/TicketFilter.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TicketFilter/TicketFilter.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TicketFilter/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TicketList/TicketList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TicketList/TicketList.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TicketList/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TicketTabs/TicketTabs.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TicketTabs/TicketTabs.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TicketTabs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/OpenSans-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/OpenSans-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/Form.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/Logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/Shape.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies-app/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies-app/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies-app/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/.husky/pre-commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/components/app/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/components/app/app.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/components/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/components/check-connection/check-connection.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/components/check-connection/check-connection.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/components/check-connection/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/components/movie-card/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/components/movie-card/movie-card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/components/movie-card/movie-card.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/components/movie-list/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/components/movie-list/movie-list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/components/movie-list/movie-list.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/components/moviesContext/moviesContext.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/img/icons-disconnected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/img/icons-no-image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-movies/src/service/tmdb-service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-todo/src/components/footer/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-todo/src/components/footer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-todo/src/components/new-task-form/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-todo/src/components/new-task-form/new-task-form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-todo/src/components/task-list/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-todo/src/components/task-list/task-list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-todo/src/components/task/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-todo/src/components/task/task.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-todo/src/components/tasks-filter/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-todo/src/components/tasks-filter/tasks-filter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-todo/src/components/todo-app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-todo/src/components/todo-app/todo-app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../react-todo/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/.idea/todo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/app-header/app-header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/app-header/app-header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/app-header/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/app/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/app/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/item-add-form/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/item-add-form/item-add-form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/item-add-form/item-add-form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/item-status-filter/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/item-status-filter/item-status-filter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/item-status-filter/item-status-filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/search-panel/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/search-panel/search-panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/search-panel/search-panel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/todo-list-item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/todo-list-item/todo-list-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/todo-list-item/todo-list-item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/todo-list/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/todo-list/todo-list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../todo/src/components/todo-list/todo-list.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2TORRNK168fk9l9SOHGwonQGG6q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettier.import.notification.dismissed&quot;: &quot;true&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/nos/Projects/react-aviasales/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components/TicketSorting" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09b04e58-d19b-40be-a0e4-be143cba4248" name="Changes" comment="" />
+      <created>1690912131667</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690912131667</updated>
+      <workItem from="1690912132796" duration="3057000" />
+      <workItem from="1690919716727" duration="5000" />
+      <workItem from="1690963572115" duration="19764000" />
+      <workItem from="1691000233910" duration="1366000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

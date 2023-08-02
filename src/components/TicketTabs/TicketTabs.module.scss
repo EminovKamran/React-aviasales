@@ -1,0 +1,40 @@
+.ticketDisplay {
+  flex-basis: 65%;
+  flex-grow: 1;
+}
+.tabs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #FFFFFF;
+  height: 50px;
+  border-radius: 5px;
+  &Active {
+    padding: 15px;
+    font-family: OpenSans-SemiBold, sans-serif;
+    font-size: 12px;
+    flex: 1 1 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .4s;
+    background-color: #FFFFFF;
+    border: none;
+  }
+  &Active:first-child {
+    border-right:  1px solid #DFE5EC;
+    border-radius: 5px 0 0 5px;
+  }
+  &Active:last-child {
+    border-left:  1px solid #DFE5EC;
+    border-radius: 0 5px 5px 0;
+  }
+
+  &Active:hover {
+    background: #2196F3;
+    color: #FFFFFF;
+  }
+}
