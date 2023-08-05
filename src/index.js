@@ -1,11 +1,15 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
+import { Provider } from 'react-redux';
 
 import AviaSalesApp from './components/AviaSalesApp';
+import { store } from './store/store';
 import './index.css';
 
-createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AviaSalesApp />
+    <Provider store={store}>
+      <AviaSalesApp />
+    </Provider>
   </React.StrictMode>,
 );
