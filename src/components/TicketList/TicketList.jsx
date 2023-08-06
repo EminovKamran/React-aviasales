@@ -1,22 +1,25 @@
-import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+
+import { fetchAvia } from '../../store/aviaSlice';
+import Ticket from '../Ticket';
 
 import styles from './TicketList.module.scss';
 
 function TicketList() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchAvia());
+  }, [dispatch]);
+
+  const tickets = useSelector((state) => state.aviaSlice.tickets);
+
   return (
     <div className={styles.ticket}>
-      <div className={styles.ticket__header}>
-        <span className={styles.ticket__price} />
-        <img src='' alt='' className={styles.ticket__img} />
-      </div>
-      <ul className={styles.ticket__info}>
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
-      </ul>
+      {tickets.map((ticket, index) =>
+        index <= 10 ? <Ticket key={ticket.id} ticket={ticket} /> : null,
+      )}
     </div>
   );
 }

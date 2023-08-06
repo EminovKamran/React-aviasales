@@ -1,5 +1,3 @@
-import React from 'react';
-
 import TicketList from '../TicketList';
 import Footer from '../Footer';
 

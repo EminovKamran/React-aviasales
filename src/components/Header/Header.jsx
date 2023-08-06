@@ -1,5 +1,3 @@
-import React from 'react';
-
 import logo from '../../image/Logo.svg';
 
 import styles from './Header.module.scss';
