@@ -1,19 +1,26 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import uniqid from 'uniqid';
 
-import AviaService from '../Service/AviaService';
+import AviaService from '../service/AviaService';
 
 const initialState = {
   filters: [
-    { id: 0, text: 'Все', checked: false },
-    { id: 1, text: 'Без пересадок', checked: false, transfers: 0 },
-    { id: 2, text: '1 пересадка', checked: false, transfers: 1 },
-    { id: 3, text: '2 пересадки', checked: false, transfers: 2 },
-    { id: 4, text: '3 пересадки', checked: false, transfers: 3 },
+    { id: 0, text: 'Все', checked: true },
+    { id: 1, text: 'Без пересадок', checked: true, transfers: 0 },
+    { id: 2, text: '1 пересадка', checked: true, transfers: 1 },
+    { id: 3, text: '2 пересадки', checked: true, transfers: 2 },
+    { id: 4, text: '3 пересадки', checked: true, transfers: 3 },
+  ],
+  buttons: [
+    { id: 0, text: 'САМЫЙ ДЕШЕВЫЙ', disabled: false, active: false },
+    { id: 1, text: 'САМЫЙ БЫСТРЫЙ', disabled: false, active: false },
+    { id: 2, text: 'ОПТИМАЛЬНЫЙ', disabled: true, active: false },
   ],
   status: null,
   error: null,
   tickets: [],
+  stop: false,
+  count: 5,
 };
 
 export const fetchAvia = createAsyncThunk(
@@ -56,27 +63,55 @@ export const aviaSlice = createSlice({
         el.id === 0 ? { ...el, checked: allFiltersChecked } : el,
       );
     },
+    buttonConfig: (state, action) => {
+      const buttonId = action.payload;
+
+      state.buttons.forEach((button, index) => {
+        button.active = index === buttonId;
+      });
+
+      if (buttonId === 0) {
+        state.tickets.sort((a, b) => a.price - b.price);
+      } else if (buttonId === 1) {
+        state.tickets.sort(
+          (a, b) => a.segments[0].duration - b.segments[0].duration,
+        );
+      }
+    },
+    showTickets: (state) => {
+      state.count += 5;
+    },
   },
   extraReducers: (builder) => {
     builder
       .addCase(fetchAvia.pending, (state) => {
-        state.status = 'loading';
+        state.status = true;
         state.error = null;
       })
       .addCase(fetchAvia.fulfilled, (state, action) => {
-        state.status = 'resolved';
-        state.tickets = action.payload.tickets.map((ticket) => ({
+        state.status = true;
+        const newTickets = action.payload.tickets.map((ticket) => ({
           id: uniqid(),
           ...ticket,
         }));
+        state.tickets.unshift(...newTickets);
+
+        if (!action.payload.stop) {
+          state.stop = !state.stop;
+        } else {
+          state.status = false;
+        }
       })
       .addCase(fetchAvia.rejected, (state, action) => {
-        state.status = 'rejected';
+        if (action.payload.status === 500) {
+          state.status = true;
+        }
         state.error = action.payload;
+        state.stop = !state.stop;
       });
   },
 });
 
-export const { checkboxConfig } = aviaSlice.actions;
+export const { checkboxConfig, buttonConfig, showTickets } = aviaSlice.actions;
 
 export default aviaSlice.reducer;

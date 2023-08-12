@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background: #FFFFFF;
+  background: #ffffff;
   height: 50px;
   border-radius: 5px;
   &Active {
@@ -20,21 +20,31 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: .4s;
-    background-color: #FFFFFF;
+    transition: 0.4s;
+    background-color: #ffffff;
     border: none;
+    &.active {
+      background: #2196f3;
+      color: #ffffff;
+    }
   }
   &Active:first-child {
-    border-right:  1px solid #DFE5EC;
+    border-right: 1px solid #dfe5ec;
     border-radius: 5px 0 0 5px;
-  }
-  &Active:last-child {
-    border-left:  1px solid #DFE5EC;
-    border-radius: 0 5px 5px 0;
   }
 
   &Active:hover {
-    background: #2196F3;
-    color: #FFFFFF;
+    background: #2196f3;
+    color: #ffffff;
+  }
+
+  &Active:last-child {
+    border-left: 1px solid #dfe5ec;
+    border-radius: 0 5px 5px 0;
+    cursor: not-allowed;
+    &:hover {
+      background: #ffffff;
+      color: #c3c3c3;
+    }
   }
 }

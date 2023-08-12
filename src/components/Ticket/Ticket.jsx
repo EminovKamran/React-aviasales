@@ -1,9 +1,25 @@
 import uniqid from 'uniqid';
+import { format } from 'date-fns';
 
 import styles from './Ticket.module.scss';
 
 export function Ticket({ ticket }) {
   const { price, carrier, segments } = ticket;
+
+  function endingStops(count) {
+    if (count === 1) {
+      return 'пересадка';
+    }
+    if (count >= 2 && count <= 4) {
+      return 'пересадки';
+    }
+    return 'пересадок';
+  }
+  function correctTime(time) {
+    const hour = (time / 60).toFixed(0);
+    const min = time % 60;
+    return `${hour}ч ${min}м`;
+  }
 
   return (
     <div className={styles.ticketDescription}>
@@ -20,21 +36,24 @@ export function Ticket({ ticket }) {
           {segments.map((item) => (
             <div key={uniqid()} className={styles.ticketList}>
               <div className={styles.ticketItem}>
-                <span>{item.date}</span>
+                <span>{`${format(Date.parse(item.date), 'HH:mm')} - ${format(
+                  new Date(Date.parse(item.date) + item.duration * 60000),
+                  'HH:mm',
+                )}`}</span>
                 <span className={styles.ticketName}>
                   {item.origin} - {item.destination}
                 </span>
               </div>
               <div className={styles.ticketItem}>
-                <span>{item.duration}</span>
+                <span>{correctTime(item.duration)}</span>
                 <span className={styles.ticketName}>В ПУТИ</span>
               </div>
               <div className={styles.ticketItem}>
                 <span>{` ${item.stops}`}</span>
                 <span className={styles.ticketName}>
-                  {!item.stops.length
+                  {item.stops.length === 0
                     ? 'Без пересадок'
-                    : `${item.stops.length} пересадки`}
+                    : `${item.stops.length} ${endingStops(item.stops.length)}`}
                 </span>
               </div>
             </div>

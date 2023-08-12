@@ -1,22 +1,22 @@
-let id = '';
 const url = 'https://aviasales-test-api.kata.academy/';
+let id = null;
 
 export const AviaService = async () => {
-  if (!id) {
+  if (id === null) {
     const response = await fetch(`${url}search`);
     if (response.ok) {
       const body = await response.json();
       id = body.searchId;
+    } else {
+      throw new Error(`Failed to fetch ${url}search`);
     }
-  } else {
-    throw new Error(`Not fetch ${url}`);
   }
 
   const newResponse = await fetch(`${url}tickets?searchId=${id}`);
   if (newResponse.ok) {
     return newResponse.json();
   }
-  throw new Error(`Not fetch ${url}`);
+  throw new Error(`Failed to fetch ${url}tickets`);
 };
 
 export default AviaService;
