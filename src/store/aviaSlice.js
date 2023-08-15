@@ -14,7 +14,6 @@ const initialState = {
   buttons: [
     { id: 0, text: 'САМЫЙ ДЕШЕВЫЙ', disabled: false, active: false },
     { id: 1, text: 'САМЫЙ БЫСТРЫЙ', disabled: false, active: false },
-    { id: 2, text: 'ОПТИМАЛЬНЫЙ', disabled: true, active: false },
   ],
   status: null,
   error: null,
@@ -94,7 +93,7 @@ export const aviaSlice = createSlice({
           id: uniqid(),
           ...ticket,
         }));
-        state.tickets.unshift(...newTickets);
+        state.tickets.push(...newTickets);
 
         if (!action.payload.stop) {
           state.stop = !state.stop;

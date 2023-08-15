@@ -41,10 +41,5 @@
   &Active:last-child {
     border-left: 1px solid #dfe5ec;
     border-radius: 0 5px 5px 0;
-    cursor: not-allowed;
-    &:hover {
-      background: #ffffff;
-      color: #c3c3c3;
-    }
   }
 }

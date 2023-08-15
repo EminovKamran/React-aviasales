@@ -16,7 +16,6 @@ function TicketList() {
   const filters = useSelector((state) => state.aviaSlice.filters);
   const status = useSelector((state) => state.aviaSlice.status);
   const count = useSelector((state) => state.aviaSlice.count);
-  console.log(count);
 
   useEffect(() => {
     dispatch(fetchAvia());
