@@ -19,6 +19,8 @@ const initialState = {
   error: null,
   tickets: [],
   stop: false,
+  sortedByPrice: false,
+  sortedBySpeed: false,
   count: 5,
 };
 
@@ -62,6 +64,7 @@ export const aviaSlice = createSlice({
         el.id === 0 ? { ...el, checked: allFiltersChecked } : el,
       );
     },
+
     buttonConfig: (state, action) => {
       const buttonId = action.payload;
 
@@ -70,8 +73,12 @@ export const aviaSlice = createSlice({
       });
 
       if (buttonId === 0) {
+        state.sortedByPrice = true;
+        state.sortedBySpeed = false;
         state.tickets.sort((a, b) => a.price - b.price);
       } else if (buttonId === 1) {
+        state.sortedByPrice = false;
+        state.sortedBySpeed = true;
         state.tickets.sort(
           (a, b) => a.segments[0].duration - b.segments[0].duration,
         );
@@ -93,12 +100,21 @@ export const aviaSlice = createSlice({
           id: uniqid(),
           ...ticket,
         }));
-        state.tickets.push(...newTickets);
+        state.tickets.unshift(...newTickets);
 
         if (!action.payload.stop) {
           state.stop = !state.stop;
         } else {
           state.status = false;
+        }
+
+        if (state.sortedByPrice) {
+          state.tickets.sort((a, b) => a.price - b.price);
+        }
+        if (state.sortedBySpeed) {
+          state.tickets.sort(
+            (a, b) => a.segments[0].duration - b.segments[0].duration,
+          );
         }
       })
       .addCase(fetchAvia.rejected, (state, action) => {
